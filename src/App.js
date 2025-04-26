@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
+import 'jquery-validation';
+import 'bxslider/dist/jquery.bxslider.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'animate.css';
 import './App.css';
+import Notification from './components/toaster/Notification';
+import Home from './pages/Home';
+import ScriptLoader from './components/ScriptLoader';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+            <ScriptLoader />
+      <Notification/>
+      <Home/>
     </div>
   );
 }
